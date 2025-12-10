@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    height: 100%;
+    background-color: rgb(149, 186, 255, 0.472);
+}
+.contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    width: 700px;
+    height: auto;
+}
+.datos{
+    width: 400px;
+    height: 500px;
+    background-color: lightgray;
+    color: black;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    border-radius: 15px;
+    animation-name: borde;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes borde{
+    0%{
+        border-radius: 0%;
+    }
+    100%{
+        border-top-left-radius: 20%;
+        border-bottom-left-radius: 20%;
+    }
+}
+.datos .img1{
+    position: absolute;
+    top: 160px;
+    left: 750px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.datos .titulo{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 30px 0;
+    margin-top: 10px;
+}
+.datos h2{
+    margin: 0;
+    padding: 0;
+    font-weight: unset;
+    display: block;
+}
+.datos input{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border: none;
+    border-color: transparent;
+    color: black;
+    border-bottom: black 2px solid;
+    font-size: 16px;
+}
+.datos button{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    color: black;
+    background-color:skyblue;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.datos button a{
+    color: white;
+    text-decoration: none;
+}
+.datos .acceso:hover{
+    background-color: rgb(135,206,235, 0.9);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.datos a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: steelblue;
+    margin: 5px 0 0 0;
+}
+.datos a:hover{
+    color: black;
+}
+/* parte derecha  */
+.iniciar{
+    width: 400px;
+    height: 500px;
+    color: white;
+    background-color: rgb(86, 86, 86);
+    box-sizing: border-box;
+    padding: 30px 40px;
+    border-radius: 15px;
+    animation-name: bordeBlack;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes bordeBlack{
+   0%{
+        border-radius: 0%;
+    }
+    100%{
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 20%;
+    }
+}
+.iniciar .img2{
+    position: absolute;
+    top: 160px;
+    right: 750px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.iniciar .titulo{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+.iniciar button{
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+}
+.iniciar button i{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+}
+.iniciar .email{
+    background-color: #db4a39;
+    color: white;
+    font-size: 18px;
+}
+.iniciar .email:hover{
+    background-color: rgb(219, 74, 57, 0.8);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.iniciar .facebook{
+    background-color: #3b5999;
+    color: white;
+    font-size: 18px;
+}
+.iniciar .facebook:hover{
+    background-color: rgb(59, 89, 153, 0.8);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.iniciar .ex{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+.iniciar .ex:hover{
+    background-color: rgb(0, 0, 0, 0.8);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.iniciar .insta{
+    background-image: linear-gradient(to bottom right, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    font-size: 18px;
+    color: white;
+}
+.iniciar .insta:hover{
+    background-image: linear-gradient(to bottom right, rgb(81, 91, 212, 0.8), rgb(129, 52, 175, 0.8), rgb(221, 42, 123, 0.8), rgb(254, 218, 119, 0.8), rgb(245, 133, 41, 0.8));
+    cursor: pointer;
+    text-decoration: underline;
+}
